@@ -105,10 +105,34 @@ p{
   min-height: 100vh;
 }
 
+.vh_Two{
+  min-height: 90vh;
+}
+
+.vh_Three{
+  min-height: 10vh;
+}
+
 .container{
   /*border: 2px solid red;*/
 }
 
 .padding{
   padding: 10%;
+}
+
+.scroll-indicator-box{
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.scroll-indicator{
+  height: auto;
+  width: auto;
+  border: 2px solid red;
+  margin: auto;
+  font-size: 25px;
 }
