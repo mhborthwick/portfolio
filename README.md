@@ -1,6 +1,4 @@
-![Build & Test](https://github.com/mhborthwick/portfolio-v2/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)
-
-![Deploy](https://github.com/mhborthwick/portfolio-v2/actions/workflows/.github/workflows/deploy.yml/badge.svg)
+![Build & Test](https://github.com/mhborthwick/portfolio-v2/actions/workflows/.github/workflows/build-and-test.yml/badge.svg) ![Deploy](https://github.com/mhborthwick/portfolio-v2/actions/workflows/.github/workflows/deploy.yml/badge.svg)
 
 # Mike Borthwick's One-Page Portfolio
 
