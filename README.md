@@ -4,7 +4,7 @@
 
 ## Checklist
 
-- [ ] Set up unit tests
+- [x] Set up vitest
 
 - [ ] Set up GitHub Actions
 
