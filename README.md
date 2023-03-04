@@ -6,7 +6,9 @@
 
 - [x] Set up vitest
 
-- [ ] Set up GitHub Actions
+- [x] Set up GitHub Actions
+
+- [ ] Deploy app
 
 - [ ] Create:
 
