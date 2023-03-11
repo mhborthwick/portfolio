@@ -1,7 +1,9 @@
 function Title() {
   return (
     <div>
-      <h1>Mike Borthwick</h1>
+      <a href="/">
+        <h1>Mike Borthwick</h1>
+      </a>
     </div>
   );
 }

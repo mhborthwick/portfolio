@@ -5,6 +5,8 @@ import { Icons, Icon } from "./components/Icon";
 import Layout from "./components/Layout";
 import { Nav, NavItem } from "./components/Nav";
 import Title from "./components/Title";
+import { CiMail, CiLinkedin } from "react-icons/ci";
+import { VscGithubAlt } from "react-icons/vsc";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -13,9 +15,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Header>
         <Title />
         <Icons>
-          <Icon type="LinkedIn" />
-          <Icon type="GitHub" />
-          <Icon type="Mail" />
+          <Icon type="LinkedIn" Icon={CiLinkedin} />
+          <Icon type="GitHub" Icon={VscGithubAlt} />
+          <Icon type="Mail" Icon={CiMail} />
         </Icons>
         <Nav>
           <NavItem type="About Me" />

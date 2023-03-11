@@ -15,5 +15,11 @@ type NavItemProps = {
 };
 
 export function NavItem({ type }: NavItemProps) {
-  return <div>{type}</div>;
+  return (
+    <div className="px-1">
+      <a className="hover:underline hover:underline-offset-4" href="#">
+        {type}
+      </a>
+    </div>
+  );
 }
