@@ -1,6 +1,6 @@
 function Title() {
   return (
-    <div>
+    <div className="px-1 flex-none">
       <a href="/">
         <h1>Mike Borthwick</h1>
       </a>
