@@ -10,12 +10,12 @@ export type HeaderProps = {
 function Header({ isDesktop }: HeaderProps) {
   const navItems = getNavItems();
   return (
-    <div className="flex">
-      <div className="flex basis-1/2">
+    <div className="flex h-[40px]">
+      <div className="flex basis-1/2 items-center">
         <Title />
         <Icons navItems={navItems} />
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1/2 flex flex-row-reverse items-center">
         <Nav isDesktop={isDesktop} navItems={navItems}></Nav>
       </div>
     </div>

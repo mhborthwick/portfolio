@@ -21,7 +21,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
   if (isDesktop) {
     return (
       // desktop menu
-      <nav className="flex-row-reverse" style={showDesktopNav}>
+      <nav className="" style={showDesktopNav}>
         <ul className="flex">
           <NavItem title={aboutMe.title} url={aboutMe.url} />
           <NavItem title={interests.title} url={interests.url} />
@@ -32,7 +32,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
   } else {
     // mobile menu
     return (
-      <div className="flex flex-row-reverse">
+      <div className="flex flex-row-reverse relative w-[100px]">
         <div>
           <Menu>
             {({ open }) => (
@@ -46,7 +46,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                     + Menu
                   </Menu.Button>
                 )}
-                <Menu.Items className="flex flex-col text-right">
+                <Menu.Items className="flex flex-col text-right absolute right-0">
                   <Menu.Item>
                     {({ active }) => (
                       <a

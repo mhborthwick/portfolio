@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <Layout>
       <Header isDesktop={responsive.isDesktop} />
+      <Profile />
     </Layout>
   );
 }
