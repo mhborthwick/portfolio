@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
+import AboutMe from "./components/About";
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -25,6 +26,7 @@ function App() {
     <Layout>
       <Header isDesktop={responsive.isDesktop} />
       <Profile />
+      <AboutMe />
     </Layout>
   );
 }

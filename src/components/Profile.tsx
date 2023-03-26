@@ -2,16 +2,16 @@ import placeholderImage from "../assets/react.svg";
 
 function Profile() {
   return (
-    <div className="flex flex-col items-center m-4">
+    <div className="flex flex-col items-center text-center my-4">
       {/* TODO: Replace image */}
       <img
         className="w-32 h-32"
         src={placeholderImage}
         alt="Picture of Mike Borthwick"
       />
-      <h1>Mike Hideaki Borthwick</h1>
-      <hr />
-      <h3>Software Engineer in Portland, OR</h3>
+      <h1 className="text-4xl font-semibold py-2">MIKE HIDEAKI BORTHWICK</h1>
+      <hr className="w-[200px]" />
+      <h3 className="text-xl py-2">Software Engineer in Portland, OR</h3>
     </div>
   );
 }
