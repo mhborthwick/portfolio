@@ -3,6 +3,7 @@ import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
 import AboutMe from "./components/About";
+import Interests from "./components/Interests";
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -27,6 +28,7 @@ function App() {
       <Header isDesktop={responsive.isDesktop} />
       <Profile />
       <AboutMe />
+      <Interests />
     </Layout>
   );
 }
