@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Layout from "./components/Layout";
 import AboutMe from "./components/About";
 import Interests from "./components/Interests";
+import Footer from "./components/Footer";
 
 function App() {
   const [width, setWindowWidth] = useState(0);
@@ -24,12 +25,15 @@ function App() {
   };
 
   return (
-    <Layout>
-      <Header isDesktop={responsive.isDesktop} />
-      <Profile />
-      <AboutMe />
-      <Interests />
-    </Layout>
+    <>
+      <Layout>
+        <Header isDesktop={responsive.isDesktop} />
+        <Profile />
+        <AboutMe />
+        <Interests />
+      </Layout>
+      <Footer />
+    </>
   );
 }
 
