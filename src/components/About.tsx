@@ -4,7 +4,9 @@ function AboutMe() {
   return (
     <div className="my-4">
       <div className="flex flex-col items-center text-center">
-        <h2 className="text-2xl font-semibold py-2">ABOUT ME</h2>
+        <h2 id="about-me" className="text-2xl font-semibold py-2">
+          ABOUT ME
+        </h2>
         <hr className="w-[200px]" />
       </div>
       <div className="flex py-4">

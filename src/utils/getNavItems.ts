@@ -4,11 +4,11 @@ export function getNavItems(): NavItem[] {
   return [
     {
       title: "About Me",
-      url: "#",
+      url: "#about-me",
     },
     {
       title: "Interests",
-      url: "#",
+      url: "#interests",
     },
     {
       title: "Contact",

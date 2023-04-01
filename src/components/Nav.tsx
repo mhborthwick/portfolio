@@ -11,6 +11,18 @@ export type NavProps = {
   navItems: NavItem[];
 };
 
+// TODO - move to util, add unit test, rename url to id
+function handleScroll(event: React.MouseEvent, url: string) {
+  event.preventDefault();
+  const validURLs = ["#about-me", "#interests"];
+  if (validURLs.includes(url)) {
+    const section = document.querySelector(url);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}
+
 export function Nav({ isDesktop, navItems }: NavProps) {
   const aboutMe = getNavItemByTitle(navItems, "About Me");
   const interests = getNavItemByTitle(navItems, "Interests");
@@ -21,7 +33,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
   if (isDesktop) {
     return (
       // desktop menu
-      <nav className="" style={showDesktopNav}>
+      <nav style={showDesktopNav}>
         <ul className="flex">
           <NavItem title={aboutMe.title} url={aboutMe.url} />
           <NavItem title={interests.title} url={interests.url} />
@@ -35,7 +47,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
       <div className="flex flex-row-reverse relative w-[100px]">
         <div>
           <Menu>
-            {({ open }) => (
+            {({ open, close }) => (
               <>
                 {open ? (
                   <Menu.Button className="w-full text-right">
@@ -47,11 +59,15 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   </Menu.Button>
                 )}
                 <Menu.Items className="flex flex-col text-right absolute right-0">
+                  {/* // TODO - componentize Menu.Item */}
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"}`}
-                        href={aboutMe.url}
+                        className={`${active && "opacity-75"} cursor-pointer`}
+                        onClick={(e) => {
+                          handleScroll(e, aboutMe.url);
+                          close();
+                        }}
                       >
                         {aboutMe.title}
                       </a>
@@ -60,8 +76,11 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"}`}
-                        href={interests.url}
+                        className={`${active && "opacity-75"} cursor-pointer`}
+                        onClick={(e) => {
+                          handleScroll(e, interests.url);
+                          close();
+                        }}
                       >
                         {interests.title}
                       </a>
@@ -70,8 +89,11 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"}`}
-                        href={contact.url}
+                        className={`${active && "opacity-75"} cursor-pointer`}
+                        onClick={(e) => {
+                          handleScroll(e, contact.url);
+                          close();
+                        }}
                       >
                         {contact.title}
                       </a>
@@ -95,7 +117,10 @@ export type NavItemProps = {
 export function NavItem({ title, url }: NavItemProps) {
   return (
     <li className="px-1">
-      <a className="hover:underline hover:underline-offset-4" href={url}>
+      <a
+        className="hover:underline hover:underline-offset-4 cursor-pointer"
+        onClick={(e) => handleScroll(e, url)}
+      >
         {title}
       </a>
     </li>
