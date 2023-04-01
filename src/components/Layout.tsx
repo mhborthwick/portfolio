@@ -3,7 +3,7 @@ export type LayoutProps = {
 };
 
 function Layout({ children }: LayoutProps) {
-  return <div className="m-8">{children}</div>;
+  return <div className="bg-neutral-50">{children}</div>;
 }
 
 export default Layout;

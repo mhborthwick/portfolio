@@ -31,8 +31,8 @@ function App() {
         <Profile />
         <AboutMe />
         <Interests />
+        <Footer />
       </Layout>
-      <Footer />
     </>
   );
 }

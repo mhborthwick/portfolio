@@ -2,7 +2,7 @@ import placeholderImage from "../assets/react.svg";
 
 function Profile() {
   return (
-    <div className="flex flex-col items-center text-center my-4">
+    <div className="flex flex-col items-center text-center mx-8 my-4 py-4">
       {/* TODO: Replace image */}
       <img
         className="w-32 h-32"

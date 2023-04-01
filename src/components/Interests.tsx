@@ -2,7 +2,7 @@ const TEXT_PADDING_SIZE = "1";
 
 function Interests() {
   return (
-    <div className="my-4">
+    <div className="mx-8 my-4 py-4">
       <div className="flex flex-col items-center text-center">
         <h2 id="interests" className="text-2xl font-semibold py-2">
           INTERESTS

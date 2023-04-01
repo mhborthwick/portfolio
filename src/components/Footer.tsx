@@ -3,7 +3,7 @@ import getCurrentYear from "../utils/getCurrentYear";
 function Footer() {
   const year = getCurrentYear();
   return (
-    <div className="flex flex-col items-center text-center p-2 bg-lime-50">
+    <div className="flex flex-col items-center text-center p-2 bg-slate-200">
       <p>
         Made by{" "}
         <a
