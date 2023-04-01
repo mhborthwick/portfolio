@@ -32,7 +32,8 @@ export function Icon({ ReactIcon, title, url }: IconProps) {
   const label = getIconAriaLabel(title);
   return (
     <div className="px-1" aria-label={label}>
-      <a className="hover:opacity-75" href={url}>
+      {/* TODO: adjust link behavior for Mail */}
+      <a className="hover:opacity-75" href={url} target="_blank">
         {<ReactIcon size="1.75em" />}
       </a>
     </div>

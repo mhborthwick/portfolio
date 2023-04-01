@@ -5,11 +5,11 @@ test("getNavItems()", () => {
   expect(getNavItems()).toEqual([
     {
       title: "About Me",
-      url: "#",
+      url: "#about-me",
     },
     {
       title: "Interests",
-      url: "#",
+      url: "#interests",
     },
     {
       title: "Contact",
@@ -17,15 +17,15 @@ test("getNavItems()", () => {
     },
     {
       title: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/mhborthwick",
     },
     {
       title: "GitHub",
-      url: "#",
+      url: "https://github.com/mhborthwick",
     },
     {
       title: "Mail",
-      url: "#",
+      url: "mailto:mhborthwick%20*at*%20gmail%20-dot-%20com",
     },
   ]);
 });
