@@ -24,8 +24,8 @@ function AboutMe() {
                 Squarespace
               </a>
               , I gradually advanced to the role of Software Engineer in test.
-              Presently, I work to enhance and maintain the test automation in
-              our continuous deployment pipeline and lead QA efforts for the
+              Currently, I work to enhance and maintain the test automation in
+              the continuous deployment pipeline and lead QA efforts for the
               Payments team.
             </p>
             <p className={`py-${TEXT_PADDING_SIZE}`}>
@@ -46,7 +46,7 @@ function AboutMe() {
             <ul className="list-disc ml-0 pl-4">
               <li className={`py-${TEXT_PADDING_SIZE}`}>
                 Enhanced error handling in crucial code utilized in over 6% of
-                our end-to-end (E2E) tests, eliminating incomplete fixes and
+                end-to-end (E2E) tests, eliminating incomplete fixes and
                 reducing toil due to incomplete error logs, resulting in a
                 streamlined deployment process.
               </li>
@@ -59,12 +59,12 @@ function AboutMe() {
                 >
                   Clean as You Code
                 </a>{" "}
-                methodology to my embedded team's workflow, providing timely
+                methodology to embedded team's workflow, providing timely
                 feedback to developers through PR decorations and improving code
                 quality visibility across the team.
               </li>
               <li className={`py-${TEXT_PADDING_SIZE}`}>
-                Collaborated with Test Infrastructure to utilize their
+                Collaborated with the Test Infrastructure team to utilize their
                 experimental API testing toolset and developed comprehensive
                 purchase tests for multiple product lines, resulting in a 40%
                 boost in testing speed and improved stability in comparison to
