@@ -14,7 +14,7 @@ function Interests() {
           <p className={`py-${TEXT_PADDING_SIZE}`}>
             My personal interests include:
           </p>
-          <ul className="list-disc">
+          <ul className="list-disc ml-0 pl-4">
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <b>Cloud Computing.</b> It's an exciting time for cloud computing.
               To deepen my understanding and expertise in this field, I'm
@@ -39,7 +39,7 @@ function Interests() {
           <h3 className={`py-${TEXT_PADDING_SIZE} text-l font-semibold`}>
             RECENT PROJECTS
           </h3>
-          <ul className="list-disc">
+          <ul className="list-disc ml-0 pl-4">
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <a
                 className="underline underline-offset-4 hover:opacity-75"
@@ -69,7 +69,7 @@ function Interests() {
           <h3 className={`py-${TEXT_PADDING_SIZE} text-l font-semibold`}>
             CURRENTLY LEARNING
           </h3>
-          <ul className="list-disc">
+          <ul className="list-disc ml-0 pl-4">
             <li className={`py-${TEXT_PADDING_SIZE}`}>Terraform, Ansible</li>
           </ul>
         </div>

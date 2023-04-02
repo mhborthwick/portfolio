@@ -43,7 +43,7 @@ function AboutMe() {
             <h3 className={`py-${TEXT_PADDING_SIZE} text-l font-semibold`}>
               HIGHLIGHTS
             </h3>
-            <ul className="list-disc">
+            <ul className="list-disc ml-0 pl-4">
               <li className={`py-${TEXT_PADDING_SIZE}`}>
                 Enhanced error handling in crucial code utilized in over 6% of
                 our end-to-end (E2E) tests, eliminating incomplete fixes and
