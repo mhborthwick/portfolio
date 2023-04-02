@@ -1,4 +1,5 @@
 import { Menu } from "@headlessui/react";
+import React from "react";
 import { getNavItemByTitle } from "../utils/getNavItemByTitle";
 
 export type NavItem = {
@@ -60,10 +61,14 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                 )}
                 <Menu.Items className="flex flex-col text-right absolute right-0 bg-slate-400 p-4">
                   {/* // TODO - componentize Menu.Item */}
-                  <Menu.Item>
+                  <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"} cursor-pointer`}
+                        className={`${
+                          active &&
+                          "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
+                        }`}
+                        href={aboutMe.url}
                         onClick={(e) => {
                           handleScroll(e, aboutMe.url);
                           close();
@@ -73,10 +78,14 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                       </a>
                     )}
                   </Menu.Item>
-                  <Menu.Item>
+                  <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"} cursor-pointer`}
+                        className={`${
+                          active &&
+                          "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
+                        }`}
+                        href={interests.url}
                         onClick={(e) => {
                           handleScroll(e, interests.url);
                           close();
@@ -86,10 +95,14 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                       </a>
                     )}
                   </Menu.Item>
-                  <Menu.Item>
+                  <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${active && "opacity-75"} cursor-pointer`}
+                        className={`${
+                          active &&
+                          "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
+                        }`}
+                        href={contact.url}
                         onClick={(e) => {
                           handleScroll(e, contact.url);
                           close();
@@ -119,6 +132,7 @@ export function NavItem({ title, url }: NavItemProps) {
     <li className="px-1">
       <a
         className="hover:underline hover:underline-offset-4 cursor-pointer"
+        href={url}
         onClick={(e) => handleScroll(e, url)}
       >
         {title}
