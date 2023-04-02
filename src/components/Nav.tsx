@@ -44,7 +44,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
   } else {
     // mobile menu
     return (
-      <div className="flex flex-row-reverse relative w-[100px]">
+      <div className="flex flex-row-reverse relative w-[200px]">
         <div>
           <Menu>
             {({ open, close }) => (
@@ -58,7 +58,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                     + Menu
                   </Menu.Button>
                 )}
-                <Menu.Items className="flex flex-col text-right absolute right-0">
+                <Menu.Items className="flex flex-col text-right absolute right-0 bg-slate-400 p-4">
                   {/* // TODO - componentize Menu.Item */}
                   <Menu.Item>
                     {({ active }) => (
