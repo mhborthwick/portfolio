@@ -25,15 +25,13 @@ function App() {
   };
 
   return (
-    <>
-      <Layout>
-        <Header isDesktop={responsive.isDesktop} />
-        <Profile />
-        <AboutMe />
-        <Interests />
-        <Footer />
-      </Layout>
-    </>
+    <Layout>
+      <Header isDesktop={responsive.isDesktop} />
+      <Profile />
+      <AboutMe />
+      <Interests />
+      <Footer />
+    </Layout>
   );
 }
 

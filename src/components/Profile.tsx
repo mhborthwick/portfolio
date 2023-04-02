@@ -1,11 +1,11 @@
-import placeholderImage from "../assets/react.svg";
+import placeholderImage from "../assets/head-shot.png";
 
 function Profile() {
   return (
     <div className="flex flex-col items-center text-center mx-8 my-4 py-4">
       {/* TODO: Replace image */}
       <img
-        className="w-32 h-32"
+        className="w-32 h-32 rounded-full"
         src={placeholderImage}
         alt="Picture of Mike Borthwick"
       />
