@@ -1,13 +1,17 @@
+import { CgPiano } from "react-icons/cg";
+
 const TEXT_PADDING_SIZE = "1";
 
 function Interests() {
   return (
     <div className="mx-8 my-4 py-4">
       <div className="flex flex-col items-center text-center">
-        <h2 id="interests" className="text-2xl font-semibold py-2">
-          INTERESTS
-        </h2>
-        <hr className="w-[200px]" />
+        <div className="flex items-center gap-2">
+          <CgPiano size="1.75em" />
+          <h2 id="interests" className="text-2xl font-semibold py-2">
+            INTERESTS
+          </h2>
+        </div>
       </div>
       <div className="flex py-4">
         <div className="flex flex-col basis-1/2 min-w-[50%] pr-4">
@@ -42,7 +46,7 @@ function Interests() {
           <ul className="list-disc ml-0 pl-4">
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <a
-                className="underline underline-offset-4 hover:opacity-75"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
                 target="_blank"
                 href="https://songbook.up.railway.app/"
               >
@@ -54,7 +58,7 @@ function Interests() {
             </li>
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <a
-                className="underline underline-offset-4 hover:opacity-75"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
                 target="_blank"
                 href="https://github.com/mhborthwick/awa-monitoring-v2"
               >

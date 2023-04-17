@@ -59,7 +59,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                     + Menu
                   </Menu.Button>
                 )}
-                <Menu.Items className="flex flex-col text-right absolute right-0 bg-slate-400 p-4">
+                <Menu.Items className="flex flex-col text-right absolute right-0 bg-slate-200 rounded-md p-4">
                   {/* // TODO - componentize Menu.Item */}
                   <Menu.Item as={React.Fragment}>
                     {({ active }) => (

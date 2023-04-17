@@ -1,3 +1,5 @@
+import { BsPersonCircle } from "react-icons/bs";
+
 const TEXT_PADDING_SIZE = "1";
 
 function AboutMe() {
@@ -5,10 +7,12 @@ function AboutMe() {
     <div className="bg-slate-200">
       <div className="mx-8 my-4 py-4">
         <div className="flex flex-col items-center text-center">
-          <h2 id="about-me" className="text-2xl font-semibold py-2">
-            ABOUT ME
-          </h2>
-          <hr className="w-[200px]" />
+          <div className="flex items-center gap-2">
+            <BsPersonCircle size="1.75em" />
+            <h2 id="about-me" className="text-2xl font-semibold py-2">
+              ABOUT ME
+            </h2>
+          </div>
         </div>
         <div className="flex py-4">
           <div className="flex flex-col basis-1/2 min-w-[50%] pr-4">
@@ -17,7 +21,7 @@ function AboutMe() {
               proven track record of success. Beginning as a Customer Support
               Advisor at{" "}
               <a
-                className="underline underline-offset-4 hover:opacity-75"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
                 target="_blank"
                 href="https://squarespace.com"
               >
@@ -45,15 +49,15 @@ function AboutMe() {
             </h3>
             <ul className="list-disc ml-0 pl-4">
               <li className={`py-${TEXT_PADDING_SIZE}`}>
-                Enhanced error handling in crucial code utilized in over 6% of
-                end-to-end (E2E) tests, eliminating incomplete fixes and
-                reducing toil due to incomplete error logs, resulting in a
-                streamlined deployment process.
+                Improved error handling in crucial code utilized in over 6% of
+                end-to-end (E2E) tests in the deployment pipeline, eliminating
+                incomplete fixes and reducing toil caused by incomplete error
+                logs.
               </li>
               <li className={`py-${TEXT_PADDING_SIZE}`}>
                 Implemented SonarQube's{" "}
                 <a
-                  className="underline underline-offset-4 hover:opacity-75"
+                  className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
                   target="_blank"
                   href="https://docs.sonarqube.org/latest/user-guide/clean-as-you-code/"
                 >
