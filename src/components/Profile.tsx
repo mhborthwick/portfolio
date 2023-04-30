@@ -5,7 +5,7 @@ function Profile() {
     <div className="flex flex-col items-center text-center mx-8 my-4 py-4">
       <div className="rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
         <img
-          className="w-32 h-32 rounded-full"
+          className="w-24 h-24 rounded-full"
           src={placeholderImage}
           alt="Picture of Mike Borthwick"
         />
