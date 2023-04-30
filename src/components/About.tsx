@@ -5,7 +5,7 @@ const TEXT_PADDING_SIZE = "1";
 function AboutMe() {
   return (
     <div className="bg-slate-200">
-      <div className="mx-8 my-4 py-4">
+      <div className="px-8 my-4 py-4 max-w-5xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center gap-2">
             <BsPersonCircle size="1.75em" />
