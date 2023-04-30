@@ -12,18 +12,16 @@
 
 - [ ] Deploy app
 
-- [ ] Create:
+- [x] Create:
 
-  - [ ] Navigation
+  - [x] Navigation
 
-  - [ ] Main banner
+  - [x] About Me
 
-  - [ ] About Me
+  - [x] Interests
 
-  - [ ] Interests
+  - [x] Footer
 
-  - [ ] Footer
+  - [ ] Resume
 
-  - [ ] Contact Me
-
-  - [ ] Footer
+  - [x] Footer
