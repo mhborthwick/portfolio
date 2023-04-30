@@ -12,7 +12,7 @@ test("getNavItems()", () => {
       url: "#interests",
     },
     {
-      title: "Contact",
+      title: "Resume",
       url: "#",
     },
     {

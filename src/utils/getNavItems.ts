@@ -11,7 +11,7 @@ export function getNavItems(): NavItem[] {
       url: "#interests",
     },
     {
-      title: "Contact",
+      title: "Resume",
       url: "#",
     },
     {

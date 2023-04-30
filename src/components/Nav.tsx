@@ -27,7 +27,7 @@ function handleScroll(event: React.MouseEvent, url: string) {
 export function Nav({ isDesktop, navItems }: NavProps) {
   const aboutMe = getNavItemByTitle(navItems, "About Me");
   const interests = getNavItemByTitle(navItems, "Interests");
-  const contact = getNavItemByTitle(navItems, "Contact");
+  const resume = getNavItemByTitle(navItems, "Resume");
   const showDesktopNav = {
     display: isDesktop ? "flex" : "none",
   };
@@ -38,7 +38,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
         <ul className="flex">
           <NavItem title={aboutMe.title} url={aboutMe.url} />
           <NavItem title={interests.title} url={interests.url} />
-          <NavItem title={contact.title} url={contact.url} />
+          <NavItem title={resume.title} url={resume.url} />
         </ul>
       </nav>
     );
@@ -102,13 +102,13 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                           active &&
                           "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
                         }`}
-                        href={contact.url}
+                        href={resume.url}
                         onClick={(e) => {
-                          handleScroll(e, contact.url);
+                          handleScroll(e, resume.url);
                           close();
                         }}
                       >
-                        {contact.title}
+                        {resume.title}
                       </a>
                     )}
                   </Menu.Item>
