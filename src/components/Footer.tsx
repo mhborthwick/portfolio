@@ -1,4 +1,4 @@
-import { getCurrentYear } from "../utils/getCurrentYear";
+import { getCurrentYear } from "../utils";
 
 export function Footer() {
   const year = getCurrentYear();

@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
-import { NavItem } from "../components/Nav";
-import { getNavItemByTitle } from "../utils/getNavItemByTitle";
+import { NavItem } from "../components";
+import { getNavItemByTitle } from "../utils";
 
 test("getNavItemByTitle()", () => {
   const mockNavItems: NavItem[] = [

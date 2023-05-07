@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { getNavItems } from "../utils/getNavItems";
+import { getNavItems } from "../utils";
 
 test("getNavItems()", () => {
   expect(getNavItems()).toEqual([

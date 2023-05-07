@@ -1,6 +1,6 @@
 import { Menu } from "@headlessui/react";
 import React from "react";
-import { getNavItemByTitle } from "../utils/getNavItemByTitle";
+import { getNavItemByTitle } from "../utils";
 
 export type NavItem = {
   title: string;

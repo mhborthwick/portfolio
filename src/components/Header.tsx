@@ -1,4 +1,4 @@
-import { getNavItems } from "../utils/getNavItems";
+import { getNavItems } from "../utils";
 import { Icons } from "./Icon";
 import { Nav } from "./Nav";
 import { Title } from "./Title";
