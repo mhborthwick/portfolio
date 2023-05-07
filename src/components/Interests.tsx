@@ -70,12 +70,6 @@ export function Interests() {
               improved site availability.
             </li>
           </ul>
-          <h3 className={`py-${TEXT_PADDING_SIZE} text-l font-semibold`}>
-            CURRENTLY LEARNING
-          </h3>
-          <ul className="list-disc ml-0 pl-4">
-            <li className={`py-${TEXT_PADDING_SIZE}`}>Terraform, Ansible</li>
-          </ul>
         </div>
       </div>
     </div>
