@@ -1,4 +1,5 @@
 import { BsPersonCircle } from "react-icons/bs";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const TEXT_PADDING_SIZE = "1";
 
@@ -21,11 +22,14 @@ export function AboutMe() {
               proven track record of success. Beginning as a Customer Support
               Advisor at{" "}
               <a
-                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600 inline-flex"
                 target="_blank"
                 href="https://squarespace.com"
               >
                 Squarespace
+                <span className="px-0.25">
+                  <FiArrowUpRight size=".75em" />
+                </span>
               </a>
               , I gradually advanced to the role of Software Engineer in test.
               Currently, I work to enhance and maintain the test automation in
@@ -57,11 +61,14 @@ export function AboutMe() {
               <li className={`py-${TEXT_PADDING_SIZE}`}>
                 Implemented SonarQube's{" "}
                 <a
-                  className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
+                  className="underline underline-offset-4 hover:opacity-75 text-indigo-600 inline-flex"
                   target="_blank"
                   href="https://docs.sonarqube.org/latest/user-guide/clean-as-you-code/"
                 >
                   Clean as You Code
+                  <span className="px-0.25">
+                    <FiArrowUpRight size=".75em" />
+                  </span>
                 </a>{" "}
                 methodology to embedded team's workflow, providing timely
                 feedback to developers through PR decorations and improving code

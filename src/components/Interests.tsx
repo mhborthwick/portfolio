@@ -1,4 +1,5 @@
 import { CgPiano } from "react-icons/cg";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const TEXT_PADDING_SIZE = "1";
 
@@ -46,11 +47,14 @@ export function Interests() {
           <ul className="list-disc ml-0 pl-4">
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <a
-                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600 inline-flex"
                 target="_blank"
                 href="https://songbook.up.railway.app/"
               >
                 Songbook
+                <span className="px-0.25">
+                  <FiArrowUpRight size=".75em" />
+                </span>
               </a>{" "}
               is a full-stack application that uses Next.js, React, Express, and
               MongoDB. The application enables users to discover and share their
@@ -58,11 +62,14 @@ export function Interests() {
             </li>
             <li className={`py-${TEXT_PADDING_SIZE}`}>
               <a
-                className="underline underline-offset-4 hover:opacity-75 text-indigo-600"
+                className="underline underline-offset-4 hover:opacity-75 text-indigo-600 inline-flex"
                 target="_blank"
                 href="https://github.com/mhborthwick/awa-monitoring-v2"
               >
                 awa-monitoring
+                <span className="px-0.25">
+                  <FiArrowUpRight size=".75em" />
+                </span>
               </a>{" "}
               is a service developed using Golang, InfluxDB, and Grafana that
               monitors the status of key dependencies for my partner's eCommerce

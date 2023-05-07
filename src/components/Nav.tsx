@@ -1,5 +1,6 @@
 import { Menu } from "@headlessui/react";
 import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 import { getNavItemByTitle } from "../utils";
 
 export type NavItem = {
@@ -38,7 +39,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
         <ul className="flex">
           <NavItem title={aboutMe.title} url={aboutMe.url} />
           <NavItem title={interests.title} url={interests.url} />
-          <NavItem title={resume.title} url={resume.url} />
+          <ExternalNavItem title={resume.title} url={resume.url} />
         </ul>
       </nav>
     );
@@ -64,7 +65,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${
+                        className={`inline-flex ${
                           active &&
                           "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
                         }`}
@@ -81,7 +82,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${
+                        className={`inline-flex ${
                           active &&
                           "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
                         }`}
@@ -98,7 +99,7 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                   <Menu.Item as={React.Fragment}>
                     {({ active }) => (
                       <a
-                        className={`${
+                        className={`inline-flex ${
                           active &&
                           "opacity-75 hover:underline hover:underline-offset-4 underline underline-offset-4"
                         }`}
@@ -109,6 +110,9 @@ export function Nav({ isDesktop, navItems }: NavProps) {
                         }}
                       >
                         {resume.title}
+                        <span className="px-0.25">
+                          <FiArrowUpRight size=".75em" />
+                        </span>
                       </a>
                     )}
                   </Menu.Item>
@@ -131,11 +135,28 @@ export function NavItem({ title, url }: NavItemProps) {
   return (
     <li className="px-1">
       <a
-        className="hover:underline hover:underline-offset-4 cursor-pointer"
+        className="hover:underline hover:underline-offset-4 cursor-pointer hover:opacity-75"
         href={url}
         onClick={(e) => handleScroll(e, url)}
       >
         {title}
+      </a>
+    </li>
+  );
+}
+
+export function ExternalNavItem({ title, url }: NavItemProps) {
+  return (
+    <li className="px-1">
+      <a
+        className="hover:underline hover:underline-offset-4 cursor-pointer hover:opacity-75 inline-flex"
+        href={url}
+        target="_blank"
+      >
+        {title}
+        <span className="px-0.25">
+          <FiArrowUpRight size=".75em" />
+        </span>
       </a>
     </li>
   );
