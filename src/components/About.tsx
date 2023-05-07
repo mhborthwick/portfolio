@@ -2,7 +2,7 @@ import { BsPersonCircle } from "react-icons/bs";
 
 const TEXT_PADDING_SIZE = "1";
 
-function AboutMe() {
+export function AboutMe() {
   return (
     <div className="bg-slate-200">
       <div className="px-8 my-4 py-4 max-w-5xl mx-auto">
@@ -81,5 +81,3 @@ function AboutMe() {
     </div>
   );
 }
-
-export default AboutMe;

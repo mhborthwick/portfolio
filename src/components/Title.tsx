@@ -1,4 +1,4 @@
-function Title() {
+export function Title() {
   return (
     <div className="px-1 flex-none">
       <a href="/">
@@ -7,5 +7,3 @@ function Title() {
     </div>
   );
 }
-
-export default Title;

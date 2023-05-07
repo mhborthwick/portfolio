@@ -1,5 +1,3 @@
-function getIconAriaLabel(prefix: string) {
+export function getIconAriaLabel(prefix: string) {
   return prefix.toLocaleLowerCase() + "-icon";
 }
-
-export default getIconAriaLabel;

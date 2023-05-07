@@ -1,6 +1,6 @@
 import placeholderImage from "../assets/head-shot.png";
 
-function Profile() {
+export function Profile() {
   return (
     <div className="flex flex-col items-center text-center mx-8 my-4 py-4">
       <div className="rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
@@ -19,5 +19,3 @@ function Profile() {
     </div>
   );
 }
-
-export default Profile;

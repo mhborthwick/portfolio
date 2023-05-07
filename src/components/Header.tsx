@@ -1,13 +1,13 @@
 import { getNavItems } from "../utils/getNavItems";
 import { Icons } from "./Icon";
 import { Nav } from "./Nav";
-import Title from "./Title";
+import { Title } from "./Title";
 
 export type HeaderProps = {
   isDesktop: boolean;
 };
 
-function Header({ isDesktop }: HeaderProps) {
+export function Header({ isDesktop }: HeaderProps) {
   const navItems = getNavItems();
   return (
     <div className="py-4 max-w-5xl mx-auto">
@@ -23,5 +23,3 @@ function Header({ isDesktop }: HeaderProps) {
     </div>
   );
 }
-
-export default Header;

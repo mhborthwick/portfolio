@@ -2,7 +2,7 @@ import { CgPiano } from "react-icons/cg";
 
 const TEXT_PADDING_SIZE = "1";
 
-function Interests() {
+export function Interests() {
   return (
     <div className="px-8 my-4 py-4 max-w-5xl mx-auto">
       <div className="flex flex-col items-center text-center">
@@ -81,5 +81,3 @@ function Interests() {
     </div>
   );
 }
-
-export default Interests;

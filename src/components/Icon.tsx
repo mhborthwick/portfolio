@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 import { CiLinkedin, CiMail } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
-import getIconAriaLabel from "../utils/getIconAriaLabel";
+import { getIconAriaLabel } from "../utils/getIconAriaLabel";
 import { getNavItemByTitle } from "../utils/getNavItemByTitle";
 import { NavItem } from "./Nav";
 

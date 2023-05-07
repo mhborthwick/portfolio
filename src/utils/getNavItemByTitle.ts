@@ -1,4 +1,4 @@
-import { NavItem } from "../components/Nav";
+import { NavItem } from "../components";
 
 export function getNavItemByTitle(navItems: NavItem[], title: string) {
   const item = navItems.find((n) => n.title === title);

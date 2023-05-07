@@ -1,6 +1,6 @@
-import getCurrentYear from "../utils/getCurrentYear";
+import { getCurrentYear } from "../utils/getCurrentYear";
 
-function Footer() {
+export function Footer() {
   const year = getCurrentYear();
   return (
     <div className="flex flex-col items-center text-center p-2 bg-black text-zinc-50">
@@ -18,5 +18,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
