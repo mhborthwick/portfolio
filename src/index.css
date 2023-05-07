@@ -2,47 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  border-color: rgb(212 212 212);
+@layer base {
+  * {
+    border-color: rgb(212 212 212);
+  }
+
+  html {
+    background-color: rgb(250 250 250);
+  }
+
+  p {
+    padding-bottom: 0.5rem;
+  }
 }
 
-html {
-  background-color: rgb(250 250 250);
-}
+@layer components {
+  :root {
+    --width: 200px;
+  }
 
-p {
-  padding-bottom: 0.5rem;
-}
+  .holder {
+    overflow: hidden;
+    position: relative;
+    width: var(--width);
+    height: 50px;
+  }
 
-:root {
-  --width: 200px;
-}
+  .ellipse {
+    position: absolute;
+    background: radial-gradient(
+      ellipse,
+      transparent,
+      transparent 7px,
+      black 7px,
+      black 10px,
+      transparent 11px
+    );
+    background-size: 36px 40px;
+    width: var(--width);
+    height: 20px;
+  }
 
-.holder {
-  /* Clip edges, as some of the lines don't terminate nicely. */
-  overflow: hidden;
-  position: relative;
-  width: var(--width);
-  height: 50px;
-}
-
-.ellipse {
-  position: absolute;
-  background: radial-gradient(
-    ellipse,
-    transparent,
-    transparent 7px,
-    black 7px,
-    black 10px,
-    transparent 11px
-  );
-  background-size: 36px 40px;
-  width: var(--width);
-  height: 20px;
-}
-
-.ellipse2 {
-  top: 20px;
-  left: 18px;
-  background-position: 0px -20px;
+  .ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+  }
 }
